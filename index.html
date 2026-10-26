@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Tabela de valores da @isadsign.co: social media, edição de vídeo, motion, diagramação, impressos, identidade visual, rebranding e valores para autores.">
+<title>Tabela de Valores isadsign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,500;0,800;0,900;1,500;1,800;1,900&display=swap">
+<style>
+/* Layout: capa com título gigante, seções empilhadas em cartões de borda creme, barras laterais fixas e rodapé fixo da marca. Identidade isadsign, tema único escuro. */
+:root {
+  --bg: #282828;
+  --cream: #F3E8CC;
+  --pink: #E9349E;
+  --lime: #9ABC05;
+  --yellow: #FCDD6C;
+  --beige: #ACA492;
+  --line: rgba(243, 232, 204, .22);
+  --display: "Archivo", "Arial Black", system-ui, sans-serif;
+  --body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--cream); font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.5; padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 6px; }
+
+.bar { position: fixed; top: 50%; transform: translateY(-50%); width: 12px; height: 58vh; border-radius: 999px; background: var(--cream); z-index: 5; transition: background-color .3s; will-change: transform; }
+.bar.l { left: -5px; } .bar.r { right: -5px; }
+.bar.on { background: var(--pink); }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 28px; }
+@media (max-width: 600px) { .wrap { padding-inline: 20px; } }
+
+section { padding-block: 56px 8px; display: grid; gap: 22px; }
+.corners { display: flex; justify-content: space-between; gap: 12px; font-weight: 500; font-size: .78rem; letter-spacing: .04em; color: var(--beige); }
+h2 { font-family: var(--display); font-weight: 900; font-size: clamp(2rem, 6vw, 3.6rem); line-height: .9; letter-spacing: -.035em; margin: 0; text-wrap: balance; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.tag { font-family: var(--body); font-style: italic; font-weight: 500; font-size: clamp(.95rem, 2.2vw, 1.2rem); letter-spacing: 0; background: var(--pink); color: var(--cream); padding: 6px 16px; border-radius: 999px; line-height: 1.2; }
+.lead { margin: 0; max-width: 62ch; color: var(--beige); }
+
+/* Capa */
+.cover { padding-block: 40px 24px; position: relative; }
+.cover h1 { font-family: var(--display); font-weight: 900; font-style: italic; text-transform: uppercase; color: var(--lime); font-size: clamp(2.8rem, 11vw, 9rem); line-height: .86; letter-spacing: -.045em; margin: 18px 0 0; }
+.cover h1 span { display: block; }
+.cover .row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 22px; }
+.cover .who { background: var(--pink); color: var(--cream); font-style: italic; font-weight: 800; font-size: clamp(1.1rem, 3vw, 1.6rem); padding: 8px 22px; border-radius: 999px; }
+.cover p { margin: 0; font-weight: 500; color: var(--cream); max-width: 40ch; }
+.star { position: absolute; right: 2%; top: 64px; width: clamp(64px, 12vw, 130px); aspect-ratio: 1; max-width: 100%; background: var(--cream); clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+@media (max-width: 600px) { .star { top: 72px; width: 54px; } }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 34px; }
+.nav a { text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; font-weight: 500; font-size: .88rem; }
+.nav a:hover { border-color: var(--cream); }
+
+/* Formatos */
+.fmt { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 3px 11px; font-size: .78rem; font-weight: 800; white-space: nowrap; border: 1.5px solid transparent; }
+.fmt.carrossel { background: var(--pink); color: var(--cream); }
+.fmt.reels { background: var(--lime); color: var(--bg); }
+.fmt.estatico { background: var(--cream); color: var(--bg); }
+.fmt.stories { border-color: var(--cream); color: var(--cream); }
+
+/* Pacotes */
+.packs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.pack { border: 1px solid var(--line); border-radius: 26px; padding: 22px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.pack.open { border-color: var(--pink); }
+.pack h3 { font-family: var(--display); font-weight: 900; font-style: italic; font-size: 1.7rem; letter-spacing: -.03em; line-height: 1; margin: 0; }
+.pack .count { color: var(--beige); font-size: .85rem; font-weight: 500; }
+.pack .fmts { display: flex; flex-wrap: wrap; gap: 6px; }
+.pack .price { display: grid; gap: 2px; border-top: 1px solid var(--line); padding-top: 14px; }
+.big { font-family: var(--display); font-weight: 900; font-size: 2.1rem; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.big small { font-size: .95rem; font-weight: 500; letter-spacing: 0; color: var(--beige); }
+.semi { font-size: .85rem; color: var(--cream); }
+.semi b { color: var(--pink); font-weight: 800; }
+.pack ul { margin: 0; padding-left: 18px; font-size: .88rem; color: var(--cream); display: grid; gap: 4px; }
+.pack ul li::marker { color: var(--pink); }
+
+/* Listas de preço */
+.list { border: 1px solid var(--line); border-radius: 26px; padding: 6px 22px; }
+.item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 18px; align-items: center; padding-block: 14px; border-top: 1px solid var(--line); }
+.item:first-child { border-top: 0; }
+.item .n { font-weight: 800; font-size: 1.05rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.item .d { color: var(--beige); font-size: .86rem; grid-column: 1; }
+.item .v { grid-column: 2; grid-row: 1 / span 2; text-align: right; font-family: var(--display); font-weight: 900; font-size: 1.35rem; letter-spacing: -.02em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.item .v small { display: block; font-family: var(--body); font-weight: 500; font-size: .75rem; color: var(--beige); letter-spacing: 0; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.two > div { min-width: 0; display: grid; gap: 12px; align-content: start; }
+h3.sub { font-family: var(--display); font-weight: 800; font-size: 1.25rem; letter-spacing: -.02em; margin: 0; }
+
+/* Identidade visual */
+.idv { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; }
+.idv article { border: 1px solid var(--line); border-radius: 26px; padding: 24px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.idv article.full { border: 2px solid var(--pink); }
+.idv h3 { font-family: var(--display); font-weight: 900; font-style: italic; font-size: 1.9rem; letter-spacing: -.03em; line-height: 1; margin: 0; }
+.idv .meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .8rem; font-weight: 500; }
+.idv ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.idv li { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 8px; font-size: .95rem; }
+.idv li::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--pink); margin-top: .55em; }
+.idv .plus { font-style: italic; font-weight: 800; color: var(--pink); }
+
+.pack ul.inc { list-style: none; padding: 0; }
+.autor-flag { display: inline-flex; gap: 8px; align-items: center; font-weight: 800; font-style: italic; color: var(--lime); font-size: .95rem; }
+.hl { border: 2px solid var(--lime); border-radius: 30px; padding: clamp(18px, 3vw, 28px); display: grid; gap: 18px; }
+/* Etapas */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; counter-reset: s; }
+.steps li { border: 1px solid var(--line); border-radius: 22px; padding: 18px; display: grid; gap: 6px; align-content: start; counter-increment: s; }
+.steps li::before { content: counter(s); width: 34px; height: 34px; border-radius: 999px; background: var(--cream); color: var(--bg); font-family: var(--display); font-weight: 900; display: grid; place-items: center; }
+.steps b { font-family: var(--display); font-weight: 800; font-size: 1.05rem; }
+.steps span { color: var(--beige); font-size: .86rem; }
+
+.rules { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; max-width: 70ch; }
+.rules li { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 8px; }
+.rules li::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--pink); margin-top: .6em; }
+
+/* Portfólio */
+.cover .pf { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.cover .pf small { color: var(--beige); font-weight: 500; font-size: .88rem; }
+.btn.lime { background: var(--lime); color: var(--bg); }
+.arrow { display: inline-block; transition: transform .2s; }
+.btn:hover .arrow { transform: translate(2px, -2px); }
+
+.proof { margin-top: 56px; padding: 0; }
+.proof .box { position: relative; overflow: hidden; border: 2px solid var(--lime); border-radius: 30px; padding: clamp(24px, 5vw, 44px); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 22px 36px; align-items: center; }
+@media (max-width: 760px) { .proof .box { grid-template-columns: minmax(0, 1fr); } }
+.proof .kicker { font-weight: 800; font-style: italic; color: var(--lime); font-size: .95rem; letter-spacing: .02em; }
+.proof h2 { font-size: clamp(1.9rem, 5vw, 3.2rem); font-style: italic; margin-top: 6px; }
+.proof p { margin: 12px 0 0; color: var(--beige); max-width: 46ch; }
+.proof .side { display: grid; gap: 14px; justify-items: start; }
+.proof .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.proof .handle { color: var(--beige); font-size: .85rem; font-weight: 500; }
+.proof .star2 { position: absolute; right: -22px; bottom: -22px; width: 92px; aspect-ratio: 1; background: var(--lime); opacity: .9; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); pointer-events: none; }
+
+/* Fechamento */
+.closing { padding-block: 96px 40px; }
+.closing h2 { font-size: clamp(2.6rem, 9vw, 6rem); font-style: italic; }
+.closing .tag { font-size: clamp(1.1rem, 3vw, 1.7rem); padding: 8px 22px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: var(--pink); color: var(--cream); font-family: var(--display); font-weight: 800; font-size: 1.05rem; padding: 14px 24px; border-radius: 999px; }
+.btn.ghost { background: transparent; border: 1px solid var(--cream); }
+.btn:hover { filter: brightness(1.08); }
+.contact { color: var(--beige); font-size: .9rem; }
+.contact b { color: var(--cream); font-weight: 500; user-select: all; }
+.bye { font-family: var(--display); font-weight: 900; font-style: italic; color: var(--pink); font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: -.03em; margin: 8px 0 0; }
+
+footer { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: var(--bg); border-top: 1px solid var(--line); padding: 12px 28px calc(12px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+footer a { text-decoration: none; font-weight: 800; }
+footer span { font-weight: 900; font-style: italic; color: var(--pink); }
+@media (max-width: 600px) { footer { padding-inline: 20px; } }
+</style>
+
+</head>
+<body>
+<div class="bar l" aria-hidden="true"></div>
+<div class="bar r" aria-hidden="true"></div>
+
+<main class="wrap">
+  <header class="cover">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <div class="star" aria-hidden="true"></div>
+    <h1><span>Tabela</span><span>de valores</span></h1>
+    <div class="row">
+      <span class="who">isadsign · 2026</span>
+      <p>Design para redes sociais, edição de vídeo, motion design, diagramação, impressos, identidade visual e rebranding. Agora com valores especiais para autores e autoras.</p>
+    </div>
+    <div class="pf">
+      <a class="btn lime" href="https://www.behance.net/isabelasilva77" target="_blank" rel="noopener">Ver portfólio no Behance <span class="arrow" aria-hidden="true">↗</span></a>
+      <small>Projetos reais de clientes, antes de você ver os valores.</small>
+    </div>
+    <nav class="nav" aria-label="Seções">
+      <a href="#pacotes">Pacotes mensais</a>
+      <a href="#avulsos">Artes avulsas e vídeo</a>
+      <a href="#motion">Motion design</a>
+      <a href="#diagramacao">Diagramação e impressos</a>
+      <a href="#identidade">Identidade visual</a>
+      <a href="#rebranding">Rebranding</a>
+      <a href="#autores">Para autores e autoras</a>
+      <a href="#assistente">Assistente de social media</a>
+      <a href="#prazos">Prazos e extras</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#portfolio">Portfólio</a>
+    </nav>
+  </header>
+
+  <section id="pacotes">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Pacotes mensais <span class="tag">social media</span></h2>
+    <p class="lead">Artes do mês com composição fixa, mais em conta que as mesmas peças avulsas. Fechando contrato de 6 meses, o valor mensal tem 10% de desconto.</p>
+    <div class="packs">
+      <article class="pack">
+        <h3>Start</h3>
+        <div class="count">12 peças por mês</div>
+        <div class="fmts"><span class="fmt estatico">6 estáticos</span><span class="fmt carrossel">2 carrosséis</span><span class="fmt stories">4 stories</span></div>
+        <div class="price"><div class="big">R$ 450 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 405/mês</b></div></div>
+      </article>
+      <article class="pack">
+        <h3>Essencial</h3>
+        <div class="count">18 peças por mês</div>
+        <div class="fmts"><span class="fmt estatico">8 estáticos</span><span class="fmt carrossel">4 carrosséis</span><span class="fmt stories">4 stories</span><span class="fmt reels">2 reels</span></div>
+        <div class="price"><div class="big">R$ 790 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 711/mês</b></div></div>
+      </article>
+      <article class="pack">
+        <h3>Pro</h3>
+        <div class="count">26 peças por mês</div>
+        <div class="fmts"><span class="fmt estatico">10 estáticos</span><span class="fmt carrossel">6 carrosséis</span><span class="fmt stories">6 stories</span><span class="fmt reels">4 reels</span></div>
+        <div class="price"><div class="big">R$ 1.150 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 1.035/mês</b></div></div>
+      </article>
+      <article class="pack open">
+        <h3>Mensal aberto</h3>
+        <div class="count">Artes sem limite de quantidade</div>
+        <div class="fmts"><span class="fmt estatico">estáticos</span><span class="fmt carrossel">carrosséis</span><span class="fmt stories">stories</span><span class="fmt reels">até 4 reels</span></div>
+        <ul>
+          <li>Uma solicitação por vez: a próxima entra quando a anterior é entregue</li>
+          <li>Entrega em até 2 dias úteis por arte</li>
+          <li>Pedidos em dias úteis, das 9h às 18h</li>
+        </ul>
+        <div class="price"><div class="big">R$ 1.600 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 1.440/mês</b></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="avulsos">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Artes avulsas <span class="tag">e edição de vídeo</span></h2>
+    <div class="list">
+      <div class="item"><div class="n"><span class="fmt stories">Story</span></div><div class="d">1 tela</div><div class="v">R$ 30</div></div>
+      <div class="item"><div class="n"><span class="fmt estatico">Post estático</span></div><div class="d">1 arte para o feed</div><div class="v">R$ 45</div></div>
+      <div class="item"><div class="n"><span class="fmt carrossel">Carrossel</span></div><div class="d">Até 5 telas · tela extra R$ 12</div><div class="v">R$ 80</div></div>
+      <div class="item"><div class="n"><span class="fmt reels">Reels</span> edição básica</div><div class="d">Cortes, legenda e capa · até 60 segundos</div><div class="v">R$ 90</div></div>
+      <div class="item"><div class="n">Edição de vídeo</div><div class="d">Até 3 minutos · legenda, transições e capa</div><div class="v">R$ 150</div></div>
+    </div>
+  </section>
+
+  <section id="motion">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Motion design <span class="tag">sua marca em movimento</span></h2>
+    <div class="list">
+      <div class="item"><div class="n">Arte animada</div><div class="d">Post ou story com elementos em movimento · até 10 segundos</div><div class="v">R$ 120</div></div>
+      <div class="item"><div class="n">Logo animado</div><div class="d">Vinheta de 3 a 5 segundos com o seu logo e trilha de banco</div><div class="v">R$ 250</div></div>
+      <div class="item"><div class="n">Motion até 15 s</div><div class="d">Abertura, chamada ou anúncio curto</div><div class="v">R$ 400</div></div>
+      <div class="item"><div class="n">Motion até 30 s</div><div class="d">Vídeo explicativo ou institucional curto</div><div class="v">R$ 650</div></div>
+    </div>
+  </section>
+
+  <section id="diagramacao">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Diagramação <span class="tag">e impressos</span></h2>
+    <div class="two">
+      <div>
+        <h3 class="sub">Diagramação · por página, sem mínimo</h3>
+        <div class="list">
+          <div class="item"><div class="n">Página simples</div><div class="d">Texto corrido, títulos e numeração</div><div class="v">R$ 18<small>por página</small></div></div>
+          <div class="item"><div class="n">Página com elementos</div><div class="d">Imagens, tabelas, gráficos ou boxes</div><div class="v">R$ 30<small>por página</small></div></div>
+          <div class="item"><div class="n">Capa</div><div class="d">Frente · contracapa + R$ 40</div><div class="v">R$ 90</div></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub">Papelaria e impressos · arquivo pronto para gráfica</h3>
+        <div class="list">
+          <div class="item"><div class="n">Adesivo</div><div class="d">1 arte</div><div class="v">R$ 70</div></div>
+          <div class="item"><div class="n">Cartão de visita</div><div class="d">Frente e verso</div><div class="v">R$ 120</div></div>
+          <div class="item"><div class="n">Panfleto</div><div class="d">1 face, até A5 · frente e verso R$ 180</div><div class="v">R$ 120</div></div>
+          <div class="item"><div class="n">Pôster</div><div class="d">1 arte, até tamanho A2</div><div class="v">R$ 140</div></div>
+          <div class="item"><div class="n">Folder 1 dobra</div><div class="d">4 faces, A4 aberto</div><div class="v">R$ 300</div></div>
+          <div class="item"><div class="n">Folder 2 dobras</div><div class="d">6 faces, A4 aberto</div><div class="v">R$ 420</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="identidade">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Identidade visual <span class="tag">2 pacotes</span></h2>
+    <div class="idv">
+      <article>
+        <h3>IDV Essencial</h3>
+        <div class="big">R$ 1.200</div>
+        <div class="meta"><span class="chip">15 dias úteis</span><span class="chip">2 rodadas de ajustes</span></div>
+        <ul>
+          <li>Briefing e moodboard</li>
+          <li>2 conceitos iniciais apresentados</li>
+          <li>Logo principal + 1 variação (secundária, símbolo ou monograma)</li>
+          <li>Versões colorida, monocromática e negativa</li>
+          <li>Paleta de cores e tipografia</li>
+          <li>Mini guia da marca em PDF (3 páginas)</li>
+          <li>Arquivos finais em PNG, PDF e SVG</li>
+        </ul>
+      </article>
+      <article class="full">
+        <h3>IDV Completa</h3>
+        <div class="big">R$ 2.500</div>
+        <div class="meta"><span class="chip">25 dias úteis</span><span class="chip">3 rodadas de ajustes</span></div>
+        <ul>
+          <li class="plus">Tudo do Essencial, e mais:</li>
+          <li>3 conceitos iniciais apresentados</li>
+          <li>Logo principal + 3 variações</li>
+          <li>Grafismos e padronagem da marca</li>
+          <li>Manual da marca completo (12 a 15 páginas)</li>
+          <li>Cartão de visita</li>
+          <li>Kit redes sociais: foto de perfil, 5 capas de destaque e 3 templates de post</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="rebranding">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Rebranding <span class="tag">renove sua marca</span></h2>
+    <p class="lead">Para quem já tem marca e quer atualizar ou trocar. Inclui o diagnóstico da marca atual e a transição para a nova.</p>
+    <div class="idv">
+      <article>
+        <h3>Rebranding Refresh</h3>
+        <div class="big">R$ 1.500</div>
+        <div class="meta"><span class="chip">20 dias úteis</span><span class="chip">2 rodadas de ajustes</span></div>
+        <ul>
+          <li>Diagnóstico da marca atual</li>
+          <li>Briefing estratégico e moodboard</li>
+          <li>1 direção de atualização</li>
+          <li>Modernização do logo, mantendo o reconhecimento</li>
+          <li>Paleta e tipografia atualizadas</li>
+          <li>Mini guia da marca em PDF (4 páginas)</li>
+          <li>Arquivos finais em PNG, PDF e SVG</li>
+        </ul>
+      </article>
+      <article class="full">
+        <h3>Rebranding Completo</h3>
+        <div class="big">R$ 3.000</div>
+        <div class="meta"><span class="chip">30 dias úteis</span><span class="chip">3 rodadas de ajustes</span></div>
+        <ul>
+          <li class="plus">Tudo do Refresh, e mais:</li>
+          <li>3 conceitos de nova marca</li>
+          <li>Logo novo + 3 variações</li>
+          <li>Grafismos e padronagem</li>
+          <li>Manual da marca completo (15 a 18 páginas)</li>
+          <li>Cartão de visita</li>
+          <li>Kit redes sociais: foto de perfil, 5 capas de destaque e 3 templates de post</li>
+          <li>Guia de transição: perfil, destaques e capas</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="autores">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Para autores <span class="tag">e autoras</span></h2>
+    <p class="lead">Valores especiais para escritores e escritoras independentes divulgarem o livro, o lançamento e a presença de autor sem pesar no bolso. Você envia textos, fotos e trechos do livro; eu cuido do visual.</p>
+    <div class="hl">
+      <span class="autor-flag">Social media de autor · plano mensal sem fidelidade</span>
+      <div class="packs">
+        <article class="pack">
+          <h3>Autor Start</h3>
+          <div class="count">9 peças por mês</div>
+          <div class="fmts"><span class="fmt estatico">4 estáticos</span><span class="fmt carrossel">1 carrossel</span><span class="fmt stories">4 stories</span></div>
+          <div class="price"><div class="big">R$ 250 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 225/mês</b></div></div>
+        </article>
+        <article class="pack open">
+          <h3>Autor Lançamento</h3>
+          <div class="count">15 peças por mês</div>
+          <div class="fmts"><span class="fmt estatico">6 estáticos</span><span class="fmt carrossel">2 carrosséis</span><span class="fmt stories">6 stories</span><span class="fmt reels">1 reel</span></div>
+          <ul><li>Ideal para o mês de lançamento ou pré-venda</li><li>Mockup do livro incluso</li></ul>
+          <div class="price"><div class="big">R$ 390 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 351/mês</b></div></div>
+        </article>
+        <article class="pack">
+          <h3>Autor Presença</h3>
+          <div class="count">22 peças por mês</div>
+          <div class="fmts"><span class="fmt estatico">8 estáticos</span><span class="fmt carrossel">4 carrosséis</span><span class="fmt stories">8 stories</span><span class="fmt reels">2 reels</span></div>
+          <ul><li>Agendamento dos posts incluso</li><li>Mockup do livro e capas de destaque inclusos</li></ul>
+          <div class="price"><div class="big">R$ 590 <small>/mês</small></div><div class="semi">6 meses: <b>R$ 531/mês</b></div></div>
+        </article>
+      </div>
+    </div>
+    <div class="idv">
+      <article>
+        <h3>Kit Leitor</h3>
+        <div class="big">R$ 220</div>
+        <div class="meta"><span class="chip">5 dias úteis</span><span class="chip">2 rodadas de ajustes</span></div>
+        <ul>
+          <li>Marcador de página frente e verso</li>
+          <li>Cartão de visita de autor</li>
+          <li>Adesivo ou selo de autógrafo</li>
+          <li>Arquivos prontos para a gráfica</li>
+        </ul>
+      </article>
+      <article class="full">
+        <h3>Kit Lançamento</h3>
+        <div class="big">R$ 420</div>
+        <div class="meta"><span class="chip">7 dias úteis</span><span class="chip">2 rodadas de ajustes</span></div>
+        <ul>
+          <li class="plus">Tudo do Kit Leitor, e mais:</li>
+          <li>Banner de mesa ou de evento (até 60 × 160 cm)</li>
+          <li>Card de dedicatória ou agradecimento</li>
+          <li>Mockup do livro</li>
+          <li>1 post e 1 story de divulgação do lançamento</li>
+        </ul>
+      </article>
+    </div>
+    <div class="two">
+      <div>
+        <h3 class="sub">Avulsos para autores · redes sociais</h3>
+        <div class="list">
+          <div class="item"><div class="n"><span class="fmt stories">Story</span> de autor</div><div class="d">1 tela · 2 dias úteis</div><div class="v">R$ 22</div></div>
+          <div class="item"><div class="n"><span class="fmt estatico">Post</span> de divulgação do livro</div><div class="d">1 arte para o feed · 3 dias úteis</div><div class="v">R$ 35</div></div>
+          <div class="item"><div class="n"><span class="fmt carrossel">Carrossel</span> de trecho ou resenha</div><div class="d">Até 5 telas · 3 dias úteis</div><div class="v">R$ 60</div></div>
+          <div class="item"><div class="n">Mockup do livro</div><div class="d">Capa em 3D para posts e loja · 2 dias úteis</div><div class="v">R$ 40</div></div>
+          <div class="item"><div class="n"><span class="fmt reels">Reels</span> de lançamento</div><div class="d">Booktrailer simples até 30 s · 3 dias úteis</div><div class="v">R$ 70</div></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub">Avulsos para autores · papelaria</h3>
+        <div class="list">
+          <div class="item"><div class="n">Marcador de página</div><div class="d">Frente e verso · 3 dias úteis</div><div class="v">R$ 50</div></div>
+          <div class="item"><div class="n">Adesivo ou selo de autógrafo</div><div class="d">1 arte · 3 dias úteis</div><div class="v">R$ 50</div></div>
+          <div class="item"><div class="n">Cartão de autor</div><div class="d">Frente e verso · 3 dias úteis</div><div class="v">R$ 80</div></div>
+          <div class="item"><div class="n">Banner de evento</div><div class="d">Sessão de autógrafos ou feira · 4 dias úteis</div><div class="v">R$ 110</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="assistente">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Assistente <span class="tag">de social media</span></h2>
+    <p class="lead">Para social medias e agências que querem um braço direito: agendar posts dos clientes, criar e ajustar artes no Canva e editar vídeos simples no CapCut. PJ e remoto, plano mensal sem fidelidade.</p>
+    <div class="idv">
+      <article>
+        <h3>Assistente Apoio</h3>
+        <div class="big">R$ 900 <small>/mês</small></div>
+        <div class="meta"><span class="chip">até 3 perfis</span><span class="chip">24 h úteis por demanda</span></div>
+        <ul><li>Agendamento de posts</li><li>Até 20 artes ou ajustes no Canva por mês</li><li>Até 4 edições simples no CapCut por mês (até 60 s)</li></ul>
+      </article>
+      <article class="full">
+        <h3>Assistente Braço Direito</h3>
+        <div class="big">R$ 1.400 <small>/mês</small></div>
+        <div class="meta"><span class="chip">até 5 perfis</span><span class="chip">24 h úteis por demanda</span></div>
+        <ul><li>Agendamento de posts</li><li>Até 40 artes ou ajustes no Canva por mês</li><li>Até 8 edições simples no CapCut por mês (até 60 s)</li></ul>
+      </article>
+      <article>
+        <h3>Assistente Total</h3>
+        <div class="big">R$ 2.000 <small>/mês</small></div>
+        <div class="meta"><span class="chip">até 8 perfis</span><span class="chip">prioridade na fila</span></div>
+        <ul><li>Agendamento de posts</li><li>Até 60 artes ou ajustes no Canva por mês</li><li>Até 12 edições simples no CapCut por mês (até 60 s)</li></ul>
+      </article>
+    </div>
+    <div class="list">
+      <div class="item"><div class="n">Agendamento de post</div><div class="d">Por demanda · legenda e arte prontas</div><div class="v">R$ 6</div></div>
+      <div class="item"><div class="n">Arte ou ajuste no Canva</div><div class="d">Por demanda · a partir de modelo</div><div class="v">R$ 25</div></div>
+      <div class="item"><div class="n">Edição simples no CapCut</div><div class="d">Por demanda · até 60 s</div><div class="v">R$ 55</div></div>
+    </div>
+  </section>
+
+  <section id="prazos">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Prazos <span class="tag">e extras</span></h2>
+    <p class="lead">O prazo começa depois do pagamento e do recebimento de todo o material: textos, fotos, vídeos brutos e logo.</p>
+    <div class="two">
+      <div>
+        <h3 class="sub">Prazos de entrega</h3>
+        <div class="list">
+          <div class="item"><div class="n">Story, estático e carrossel</div><div class="v">3 dias úteis</div></div>
+          <div class="item"><div class="n">Reels</div><div class="v">2 dias úteis</div></div>
+          <div class="item"><div class="n">Edição de vídeo</div><div class="v">3 dias úteis</div></div>
+          <div class="item"><div class="n">Arte animada</div><div class="v">3 dias úteis</div></div>
+          <div class="item"><div class="n">Logo animado</div><div class="v">5 dias úteis</div></div>
+          <div class="item"><div class="n">Motion até 15 s / 30 s</div><div class="v">7 / 10 dias úteis</div></div>
+          <div class="item"><div class="n">Pacotes mensais</div><div class="d">Briefing do mês até o dia 25 do mês anterior</div><div class="v">lotes semanais</div></div>
+          <div class="item"><div class="n">Diagramação</div><div class="d">Até 20 páginas · +1 dia útil a cada 10 páginas</div><div class="v">5 dias úteis</div></div>
+          <div class="item"><div class="n">Adesivo, cartão e panfleto</div><div class="v">3 dias úteis</div></div>
+          <div class="item"><div class="n">Pôster</div><div class="v">4 dias úteis</div></div>
+          <div class="item"><div class="n">Folder</div><div class="v">5 dias úteis</div></div>
+          <div class="item"><div class="n">Rebranding Refresh / Completo</div><div class="v">20 / 30 dias úteis</div></div>
+          <div class="item"><div class="n">Kit Leitor / Kit Lançamento</div><div class="v">5 / 7 dias úteis</div></div>
+          <div class="item"><div class="n">Ajustes</div><div class="d">Devolução de cada rodada · motion: 2 dias úteis</div><div class="v">1 dia útil</div></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub">Extras</h3>
+        <div class="list">
+          <div class="item"><div class="n">Prioridade</div><div class="d">Entrega em 48 h</div><div class="v">+ 30%</div></div>
+          <div class="item"><div class="n">Urgência</div><div class="d">Entrega em 24 h</div><div class="v">+ 50%</div></div>
+          <div class="item"><div class="n">Arquivo editável</div><div class="d">Canva ou arquivo aberto</div><div class="v">+ 30%</div></div>
+          <div class="item"><div class="n">Ajuste extra em arte</div><div class="d">Além das 2 rodadas inclusas</div><div class="v">R$ 20</div></div>
+          <div class="item"><div class="n">Ajuste extra em vídeo ou motion</div><div class="d">Além das 2 rodadas inclusas</div><div class="v">R$ 40</div></div>
+          <div class="item"><div class="n">Contrato de 6 meses</div><div class="d">Pacotes mensais e de autor</div><div class="v">− 10%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Como funciona</h2>
+    <ol class="steps">
+      <li><b>Orçamento</b><span>Você conta o que precisa e recebe o orçamento, válido por 15 dias.</span></li>
+      <li><b>Pagamento</b><span>Pix ou boleto, antes de começar o projeto.</span></li>
+      <li><b>Material</b><span>Você envia textos, fotos, vídeos e logo.</span></li>
+      <li><b>Criação</b><span>Produção dentro do prazo de cada serviço.</span></li>
+      <li><b>Ajustes</b><span>2 rodadas inclusas por arte.</span></li>
+      <li><b>Entrega</b><span>Arquivos finais pelo Google Drive.</span></li>
+    </ol>
+    <ul class="rules">
+      <li>Impressão e custos de gráfica não estão inclusos.</li>
+      <li>Atendimento online, para clientes de qualquer lugar.</li>
+      <li>Valores para autores e autoras: escritores independentes, com material próprio (textos, fotos e arquivo da capa).</li>
+    </ul>
+  </section>
+
+  <section class="proof" id="portfolio" aria-labelledby="pf-title">
+    <div class="box">
+      <div>
+        <div class="kicker">Antes de decidir</div>
+        <h2 id="pf-title">Veja o que já criei</h2>
+        <p>Posts, reels, motion e identidades visuais feitos para marcas reais. É o jeito mais rápido de saber se o meu estilo combina com o seu negócio.</p>
+      </div>
+      <div class="side">
+        <div class="chips"><span class="fmt carrossel">social media</span><span class="fmt reels">vídeo e motion</span><span class="fmt estatico">identidade visual</span></div>
+        <a class="btn lime" href="https://www.behance.net/isabelasilva77" target="_blank" rel="noopener">Abrir portfólio no Behance <span class="arrow" aria-hidden="true">↗</span></a>
+        <span class="handle">behance.net/isabelasilva77</span>
+      </div>
+      <div class="star2" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="closing" id="contato">
+    <div class="corners"><span>@isadsign.co</span><span>@isadsign.co</span></div>
+    <h2>Gostou? <span class="tag">vamos conversar.</span></h2>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/5519971633589?text=Oi%2C%20Isa!%20Vi%20sua%20tabela%20de%20valores%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+      <a class="btn ghost" href="https://www.behance.net/isabelasilva77" target="_blank" rel="noopener">Ver portfólio <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+    <p class="contact">WhatsApp <b>(19) 97163-3589</b> · Instagram <a href="https://instagram.com/isadsign.co" target="_blank" rel="noopener"><b>@isadsign.co</b></a> · Behance <a href="https://www.behance.net/isabelasilva77" target="_blank" rel="noopener"><b>isabelasilva77</b></a></p>
+    <p class="bye">Até breve!!</p>
+  </section>
+</main>
+
+<footer>
+  <a href="https://instagram.com/isadsign.co" target="_blank" rel="noopener">@isadsign.co</a>
+  <a href="https://www.behance.net/isabelasilva77" target="_blank" rel="noopener">Portfólio ↗</a>
+  <span>Até breve!!</span>
+</footer>
+
+<script>
+(() => {
+  const closing = document.getElementById("contato");
+  if (!("IntersectionObserver" in window) || !closing) return;
+  const bars = document.querySelectorAll(".bar");
+  let on = false;
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting === on) return;
+    on = e.isIntersecting;
+    requestAnimationFrame(() => bars.forEach(b => b.classList.toggle("on", on)));
+  }, { threshold: 0.25 }).observe(closing);
+})();
+</script>
+
+
+</body></html>
